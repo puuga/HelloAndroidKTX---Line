@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="space.siwawesw.app.helloandroidktx.MainActivity">
+
+    <TextView
+        android:id="@+id/tvLineId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/edtLineId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Line ID"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/tvLineId"
+        app:layout_constraintStart_toStartOf="@+id/tvLineId"
+        app:layout_constraintTop_toBottomOf="@+id/tvLineId" />
+
+    <Button
+        android:id="@+id/btnGoToLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/edtLineId"
+        app:layout_constraintStart_toStartOf="@+id/edtLineId"
+        app:layout_constraintTop_toBottomOf="@+id/edtLineId" />
+
+</android.support.constraint.ConstraintLayout>
